@@ -1,43 +1,211 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <Questions>
-   <Question QuestionId='1' Difficulty="Easy"
-      CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe">
-      <Description>Which city is home to the Eiffel Tower?</Description>
-      <Answer IsCorrect='true' VotePercentage="70" IsShownInFiftyFifty="true">Paris</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">London</Answer>
-      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">New York</Answer>
-      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Tokyo</Answer>
-   </Question>
-   <Question QuestionId='2' Difficulty="Easy"
-      CallAFriendText="I remember this one from chemistry class, the symbol is Au">
-      <Description>What is the chemical symbol for gold?</Description>
-      <Answer IsCorrect='true' VotePercentage="60" IsShownInFiftyFifty="true">Au</Answer>
-      <Answer IsCorrect='false' VotePercentage="20" IsShownInFiftyFifty="false">Ag</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Fe</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">Cu</Answer>
-   </Question>
-   <Question QuestionId='3' Difficulty="Easy"
-      CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy">
-      <Description>Who wrote the play "Romeo and Juliet"?</Description>
-      <Answer IsCorrect='true' VotePercentage="70" IsShownInFiftyFifty="true">William Shakespeare</Answer>
-      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="true">Charles Dickens</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Jane Austen</Answer>
-      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Mark Twain</Answer>
-   </Question>
-   <Question QuestionId='4' Difficulty="Easy"
-      CallAFriendText="I remember this famous scientist's law about motion, it's Newton's first law">
-      <Description>Which law states that an object at rest will stay at rest, and an object in motion will stay in motion?</Description>
-      <Answer IsCorrect='true' VotePercentage="75" IsShownInFiftyFifty="true">Newton's First Law</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Archimedes' Principle</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Boyle's Law</Answer>
-      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="true">Einstein's Theory of Relativity</Answer>
-   </Question>
-   <Question QuestionId='5' Difficulty="Easy"
-      CallAFriendText="I remember this famous landmark in the United States, it's located in New York">
-      <Description>Which iconic statue stands on Liberty Island in New York Harbor?</Description>
-      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="true">Statue of Liberty</Answer>
-      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">Eiffel Tower</Answer>
-      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Great Wall of China</Answer>
-      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Sydney Opera House</Answer>
-   </Question>
+	<Question QuestionId="1" Difficulty="Easy" CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe">
+		<Description>
+			Which city is home to the Eiffel Tower?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			Paris
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			London
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			New York
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Tokyo
+		</Answer>
+	</Question>
+	<Question QuestionId="2" Difficulty="Easy" CallAFriendText="I remember this one from chemistry class, the symbol is Au">
+		<Description>
+			What is the chemical symbol for gold?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
+			Au
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Ag
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Fe
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Cu
+		</Answer>
+	</Question>
+	<Question QuestionId="3" Difficulty="Easy" CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy">
+		<Description>
+			Who wrote the play "Romeo and Juliet"?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			William Shakespeare
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Charles Dickens
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Jane Austen
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Mark Twain
+		</Answer>
+	</Question>
+	<Question QuestionId="4" Difficulty="Easy" CallAFriendText="I remember this famous scientist's law about motion, it's Newton's first law">
+		<Description>
+			Which law states that an object at rest will stay at rest, and an object in
+			motion will stay in motion?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="75" IsShownInFiftyFifty="true">
+			Newton's First Law
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Archimedes'
+			Principle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Boyle's Law
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="true">
+			Einstein's Theory of
+			Relativity
+		</Answer>
+	</Question>
+	<Question QuestionId="5" Difficulty="Easy" CallAFriendText="I remember this famous landmark in the United States, it's located in New York">
+		<Description>
+			Which iconic statue stands on Liberty Island in New York Harbor?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="80" IsShownInFiftyFifty="true">
+			Statue of Liberty
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Eiffel Tower
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Great Wall of China
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Sydney Opera House
+		</Answer>
+	</Question>
+	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="I remember studying this famous equation in physics class, it involves mass and energy">
+		<Description>
+			What is the equation that relates mass and energy, formulated by Albert
+			Einstein?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			F=ma
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
+			E=mc^2
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			PV=nRT
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Hooke's Law
+		</Answer>
+	</Question>
+	<Question QuestionId="7" Difficulty="Medium" CallAFriendText="I recall studying this historical event in the 20th century, it involved a significant treaty">
+		<Description>
+			Which treaty marked the end of World War I and was signed in 1919?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Treaty of Versailles
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Treaty of Trianon
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Treaty of Brest-Litovsk
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			Molotov-Ribbentrop Pact
+		</Answer>
+	</Question>
+	<Question QuestionId="8" Difficulty="Medium" CallAFriendText="I remember learning about this ancient civilization, known for its pyramids and Sphinx">
+		<Description>
+			Which ancient civilization built the pyramids of Giza?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
+			Ancient Egyptians
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Mesopotamians
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			Mayans
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Greeks
+		</Answer>
+	</Question>
+	<Question QuestionId="9" Difficulty="Medium" CallAFriendText="I recall studying about this famous scientific expedition, led by Charles Darwin">
+		<Description>
+			What is the name of Charles Darwin's ship during his voyage to the Galápagos Islands?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
+			HMS Beagle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Endeavour
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			Santa Maria
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Discovery
+		</Answer>
+	</Question>
+	<Question QuestionId="10" Difficulty="Medium" CallAFriendText="I remember this famous painting, it depicts a melting clock in a surreal landscape">
+		<Description>
+			Who is the artist known for the painting "The Persistence of Memory"?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Salvador Dalí
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Pablo Picasso
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			Vincent van Gogh
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Claude Monet
+		</Answer>
+	</Question>
+	<Question QuestionId="11" Difficulty="Medium" CallAFriendText="I remember this famous scientist's contributions to the theory of evolution">
+		<Description>
+			Who developed the theory of evolution by natural selection?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
+			Charles Darwin
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Gregor Mendel
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Alfred Russel Wallace
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Louis Pasteur
+		</Answer>
+	</Question>
+	<Question QuestionId="12" Difficulty="Medium" CallAFriendText="I remember this landmark event during the 20th century, it led to the fall of the Berlin Wall">
+		<Description>
+			What was the name of the political and economic restructuring in the Soviet Union during the 1980s?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
+			Perestroika
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Glasnost
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Solidarity
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Velvet Revolution
+		</Answer>
+	</Question>
 </Questions>
