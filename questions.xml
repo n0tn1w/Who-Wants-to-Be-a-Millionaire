@@ -208,4 +208,106 @@
 			Velvet Revolution
 		</Answer>
 	</Question>
+	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I remember this challenging mathematical concept, often associated with chaos theory">
+		<Description>
+			What is the name of the mathematical concept that describes sensitive dependence on initial conditions and is often associated with chaos theory?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="40" IsShownInFiftyFifty="true">
+			Fractal Geometry
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Butterfly Effect
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Golden Ratio
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Game Theory
+		</Answer>
+	</Question>
+	<Question QuestionId="14" Difficulty="Hard" CallAFriendText="I recall studying about this complex philosophical concept, often discussed in metaphysics">
+		<Description>
+			What is the philosophical concept that questions the nature of reality, existence, and knowledge, and is often discussed in metaphysics?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Solipsism
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="35" IsShownInFiftyFifty="true">
+			Ontology
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Utilitarianism
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Nihilism
+		</Answer>
+	</Question>
+	<Question QuestionId="15" Difficulty="Hard" CallAFriendText="I remember learning about this intricate concept in quantum mechanics">
+		<Description>
+			In quantum mechanics, what principle states that measuring one property of a particle precisely makes the simultaneous measurement of another property less precise?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Pauli Exclusion Principle
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Heisenberg Uncertainty Principle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Schrödinger's Cat
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Quantum Entanglement
+		</Answer>
+	</Question>
+	<Question QuestionId="16" Difficulty="Hard" CallAFriendText="I recall studying this challenging concept in computer science, essential for algorithm efficiency">
+		<Description>
+			What is the time complexity of the quicksort algorithm in the worst-case scenario?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			O(n)
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="35" IsShownInFiftyFifty="true">
+			O(n^2)
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			O(log n)
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			O(n log n)
+		</Answer>
+	</Question>
+	<Question QuestionId="17" Difficulty="Hard" CallAFriendText="I remember this complex economic theory, often associated with government intervention">
+		<Description>
+			What economic theory advocates for government intervention in the economy to stabilize fluctuations and maintain full employment?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Monetarism
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Laissez-Faire
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Keynesian Economics
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Austrian School
+		</Answer>
+	</Question>
+	<Question QuestionId="18" Difficulty="Hard" CallAFriendText="I recall this intricate geographical term, often used in the study of landforms">
+		<Description>
+			What term is used to describe a narrow, steep-sided inlet of the sea between high cliffs, typically formed by the submergence of a glaciated valley?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Fjord
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Estuary
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Atoll
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Polder
+		</Answer>
+	</Question>
 </Questions>
