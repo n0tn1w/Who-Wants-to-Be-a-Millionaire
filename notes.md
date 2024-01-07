@@ -8,3 +8,4 @@
 - Count of 50/50 answers per question = 2
 - Length of Answer, CallAFriendText, QuestionDescription are 50, 100, 200 respectively.
 - Note that most of these are impossible with DTD.
+- Also note that the schema may not work on most free online tools, because they use an outdated XML schema version and do not support 1.1.

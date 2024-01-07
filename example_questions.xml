@@ -12,7 +12,7 @@
       CallAFriendText="I think the correct answer is something to do with animals">
       <Description>What is a Dog?</Description>
       <Answer IsCorrect='false' VotePercentage="30" IsShownInFiftyFifty="true">Option AA</Answer>
-      <Answer IsCorrect='false' VotePercentage="40" IsShownInFiftyFifty="true">Option BB</Answer>
+      <Answer IsCorrect='false' VotePercentage="40" IsShownInFiftyFifty="false">Option BB</Answer>
       <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">Option CC</Answer>
       <Answer IsCorrect='true' VotePercentage="15" IsShownInFiftyFifty='true'>Option DD</Answer>
    </Question>

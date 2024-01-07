@@ -1,70 +1,82 @@
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
-  <xs:element name="Questions" vc:minVersion="1.1">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element name="Question" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
-              <xs:element name='Description' type='DescriptionString'/>
-              <xs:element name="Answer" maxOccurs="4" minOccurs="4">
-                <xs:complexType>
-                  <xs:simpleContent>
-                    <xs:extension base="AnswerString">
-                      <xs:attribute type="PercentageType" name="VotePercentage" use="required"/>
-                      <xs:attribute type="xs:boolean" name="IsShownInFiftyFifty" use="required"/>
-                      <xs:attribute type="xs:boolean" name="IsCorrect" use="required"/>
-                    </xs:extension>
-                  </xs:simpleContent>
-                </xs:complexType>
-              </xs:element>
-            </xs:sequence>
-            <xs:attribute name='CallAFriendText' type='CallAFriendString' use="required"/>
-            <xs:attribute name='Difficulty' type='DifficultyType' use="required"/>
-            <xs:attribute type="xs:integer" name="QuestionId" use="required"/>
-            <xs:assert test="sum(Answer/@VotePercentage) = 100"/>
-            <xs:assert test="count(Answer[@IsCorrect=true()]) = 1"/>          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
-    </xs:complexType>
-    <xs:key name="QuestionIsUnique">
-      <xs:selector xpath="Question"/>
-      <xs:field xpath="@QuestionId"/>
-    </xs:key>
-  </xs:element>
-
-  <xs:simpleType name="CallAFriendString">
-    <xs:restriction base="xs:string">
-      <xs:whiteSpace value="collapse"/>
-      <xs:maxLength value="100"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="AnswerString">
-    <xs:restriction base="xs:string">
-      <xs:whiteSpace value="collapse"/>
-      <xs:maxLength value="50"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="DescriptionString">
-    <xs:restriction base="xs:string">
-      <xs:whiteSpace value="collapse"/>
-      <xs:maxLength value="200"/>
-    </xs:restriction>
-  </xs:simpleType>
-
-  <xs:simpleType name="DifficultyType">
-    <xs:restriction base="xs:string">
-      <xs:enumeration value="Easy"/>
-      <xs:enumeration value="Medium"/>
-      <xs:enumeration value="Hard"/>
-    </xs:restriction>
-  </xs:simpleType>
-
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Schema that validates the XML questions file -->
+<!-- Note that the schema uses XML schema version 1.1 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+  <!-- Represents a whole integer type allowing only values between 0 and 100 -->
   <xs:simpleType name="PercentageType">
     <xs:restriction base="xs:integer">
-      <xs:minInclusive value="0"/>
-      <xs:maxInclusive value="100"/>
+      <xs:minInclusive value="0" />
+      <xs:maxInclusive value="100" />
     </xs:restriction>
   </xs:simpleType>
+  <!-- Represents a modified string type for the text in a CallAFriend attibute of a question -->
+  <xs:simpleType name="CallAFriendString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:maxLength value="100" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Represents a modified string type for the text in an answer -->
+  <xs:simpleType name="AnswerString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:maxLength value="50" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Represents a modified string type for the description element of a question -->
+  <xs:simpleType name="DescriptionString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse" />
+      <xs:maxLength value="200" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Represents a type allowing enum values for the difficulty attribute of a question -->
+  <xs:simpleType name="DifficultyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Easy" />
+      <xs:enumeration value="Medium" />
+      <xs:enumeration value="Hard" />
+    </xs:restriction>
+  </xs:simpleType>
+  <!-- Represents the answer element type -->
+  <xs:complexType name="AnswerType">
+    <xs:simpleContent>
+      <xs:extension base="AnswerString">
+        <xs:attribute name="VotePercentage" type="PercentageType" use="required" />
+        <xs:attribute name="IsShownInFiftyFifty" type="xs:boolean" use="required" />
+        <xs:attribute name="IsCorrect" type="xs:boolean" use="required" />
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <!-- Represents the question element type -->
+  <xs:complexType name="QuestionType">
+    <xs:sequence>
+      <xs:element name="Description" type="DescriptionString" />
+      <xs:element name="Answer" type="AnswerType" maxOccurs="4" minOccurs="4" />
+    </xs:sequence>
+    <xs:attribute name="CallAFriendText" type="CallAFriendString" use="required" />
+    <xs:attribute name="Difficulty" type="DifficultyType" use="required" />
+    <xs:attribute name="QuestionId" type="xs:integer" use="required" />
+    <!-- Checks that the sum of all answer persents in a question equals 100 -->
+    <xs:assert test="sum(Answer/@VotePercentage) = 100" />
+    <!-- Checks that the number of correct answers in a question equals 1 -->
+    <xs:assert test="count(Answer[@IsCorrect=true()]) = 1" />
+    <!-- Checks that the number of answers shown during 50/50 lifeline equals 2 -->
+    <xs:assert test="count(Answer[@IsShownInFiftyFifty=true()]) = 2" />
+  </xs:complexType>
+  <!-- Represents the list of questions element type -->
+  <xs:complexType name="ListOfQuestionsType">
+    <xs:sequence>
+      <xs:element name="Question" type="QuestionType" maxOccurs="unbounded" minOccurs="0" />
+    </xs:sequence>
+  </xs:complexType>
+  <!-- Represent the root element, a list of all questions -->
+  <xs:element name="Questions" type="ListOfQuestionsType" vc:minVersion="1.1">
+    <!-- Enforces required and unique identifiers for every question -->
+    <xs:key name="QuestionIsUnique">
+      <xs:selector xpath="Question" />
+      <xs:field xpath="@QuestionId" />
+    </xs:key>
+  </xs:element>
 </xs:schema>
