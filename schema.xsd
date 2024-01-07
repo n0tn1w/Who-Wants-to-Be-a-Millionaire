@@ -14,7 +14,7 @@
   <xs:simpleType name="CallAFriendString">
     <xs:restriction base="xs:string">
       <xs:whiteSpace value="collapse" />
-      <xs:maxLength value="100" />
+      <xs:maxLength value="130" />
     </xs:restriction>
   </xs:simpleType>
   <!-- Represents a modified string type for the text in an answer -->

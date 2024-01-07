@@ -1,6 +1,6 @@
 <?xml version="1.1" encoding="UTF-8"?>
 <Questions>
-	<Question QuestionId="1" Difficulty="Easy" CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe">
+	<Question QuestionId="1" Difficulty="Easy" CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe.">
 		<Description>
 			Which city is home to the Eiffel Tower?
 		</Description>
@@ -17,7 +17,7 @@
 			Tokyo
 		</Answer>
 	</Question>
-	<Question QuestionId="2" Difficulty="Easy" CallAFriendText="I remember this one from chemistry class, the symbol is Au">
+	<Question QuestionId="2" Difficulty="Easy" CallAFriendText="I remember this one from chemistry class, the symbol is Au.">
 		<Description>
 			What is the chemical symbol for gold?
 		</Description>
@@ -34,7 +34,7 @@
 			Cu
 		</Answer>
 	</Question>
-	<Question QuestionId="3" Difficulty="Easy" CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy">
+	<Question QuestionId="3" Difficulty="Easy" CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy.">
 		<Description>
 			Who wrote the play "Romeo and Juliet"?
 		</Description>
@@ -51,7 +51,7 @@
 			Mark Twain
 		</Answer>
 	</Question>
-	<Question QuestionId="4" Difficulty="Easy" CallAFriendText="I remember this famous scientist's law about motion, it's Newton's first law">
+	<Question QuestionId="4" Difficulty="Easy" CallAFriendText="There's a law about motion, something about inertia. Could it be Newton's First Law?">
 		<Description>
 			Which law states that an object at rest will stay at rest, and an object in
 			motion will stay in motion?
@@ -71,7 +71,7 @@
 			Relativity
 		</Answer>
 	</Question>
-	<Question QuestionId="5" Difficulty="Easy" CallAFriendText="I remember this famous landmark in the United States, it's located in New York">
+	<Question QuestionId="5" Difficulty="Easy" CallAFriendText="It is for sure the Statue of Liberty!">
 		<Description>
 			Which iconic statue stands on Liberty Island in New York Harbor?
 		</Description>
@@ -88,7 +88,7 @@
 			Sydney Opera House
 		</Answer>
 	</Question>
-	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="I remember studying this famous equation in physics class, it involves mass and energy">
+	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="Good lord... I watched the Oppenheimer movie just yesterday. The answer is E=mc^2">
 		<Description>
 			What is the equation that relates mass and energy, formulated by Albert
 			Einstein?
@@ -106,7 +106,7 @@
 			Hooke's Law
 		</Answer>
 	</Question>
-	<Question QuestionId="7" Difficulty="Medium" CallAFriendText="I recall studying this historical event in the 20th century, it involved a significant treaty">
+	<Question QuestionId="7" Difficulty="Medium" CallAFriendText="Sorry, I did not study during History classes.">
 		<Description>
 			Which treaty marked the end of World War I and was signed in 1919?
 		</Description>
@@ -123,7 +123,7 @@
 			Molotov-Ribbentrop Pact
 		</Answer>
 	</Question>
-	<Question QuestionId="8" Difficulty="Medium" CallAFriendText="I remember learning about this ancient civilization, known for its pyramids and Sphinx">
+	<Question QuestionId="8" Difficulty="Medium" CallAFriendText="I remember learning about this ancient civilization, known for its pyramids and Sphinx. I am not sure about the name...">
 		<Description>
 			Which ancient civilization built the pyramids of Giza?
 		</Description>
@@ -140,7 +140,7 @@
 			Greeks
 		</Answer>
 	</Question>
-	<Question QuestionId="9" Difficulty="Medium" CallAFriendText="I recall studying about this famous scientific expedition, led by Charles Darwin">
+	<Question QuestionId="9" Difficulty="Medium" CallAFriendText="Charles Darwin's ship during his Galápagos voyage... I think it's HMS Beagle?">
 		<Description>
 			What is the name of Charles Darwin's ship during his voyage to the Galápagos Islands?
 		</Description>
@@ -157,7 +157,7 @@
 			Discovery
 		</Answer>
 	</Question>
-	<Question QuestionId="10" Difficulty="Medium" CallAFriendText="I remember this famous painting, it depicts a melting clock in a surreal landscape">
+	<Question QuestionId="10" Difficulty="Medium" CallAFriendText="Monet is a champagne so it is not the correct answer for sure.">
 		<Description>
 			Who is the artist known for the painting "The Persistence of Memory"?
 		</Description>
@@ -174,7 +174,7 @@
 			Claude Monet
 		</Answer>
 	</Question>
-	<Question QuestionId="11" Difficulty="Medium" CallAFriendText="I remember this famous scientist's contributions to the theory of evolution">
+	<Question QuestionId="11" Difficulty="Medium" CallAFriendText="Could it be Charles Darwin?">
 		<Description>
 			Who developed the theory of evolution by natural selection?
 		</Description>
@@ -191,7 +191,7 @@
 			Louis Pasteur
 		</Answer>
 	</Question>
-	<Question QuestionId="12" Difficulty="Medium" CallAFriendText="I remember this landmark event during the 20th century, it led to the fall of the Berlin Wall">
+	<Question QuestionId="12" Difficulty="Medium" CallAFriendText="This one is a bit challenging, but recalling the 20th century, there was something with Perestroika?">
 		<Description>
 			What was the name of the political and economic restructuring in the Soviet Union during the 1980s?
 		</Description>
@@ -208,7 +208,7 @@
 			Velvet Revolution
 		</Answer>
 	</Question>
-	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I remember this challenging mathematical concept, often associated with chaos theory">
+	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I am in love with this question">
 		<Description>
 			What is the name of the mathematical concept that describes sensitive dependence on initial conditions and is often associated with chaos theory?
 		</Description>
@@ -225,7 +225,7 @@
 			Game Theory
 		</Answer>
 	</Question>
-	<Question QuestionId="14" Difficulty="Hard" CallAFriendText="I recall studying about this complex philosophical concept, often discussed in metaphysics">
+	<Question QuestionId="14" Difficulty="Hard" CallAFriendText="Good job so far! There's a concept questioning reality and knowledge. Maybe Ontology?">
 		<Description>
 			What is the philosophical concept that questions the nature of reality, existence, and knowledge, and is often discussed in metaphysics?
 		</Description>
@@ -242,7 +242,7 @@
 			Nihilism
 		</Answer>
 	</Question>
-	<Question QuestionId="15" Difficulty="Hard" CallAFriendText="I remember learning about this intricate concept in quantum mechanics">
+	<Question QuestionId="15" Difficulty="Hard" CallAFriendText="No idea!">
 		<Description>
 			In quantum mechanics, what principle states that measuring one property of a particle precisely makes the simultaneous measurement of another property less precise?
 		</Description>
@@ -259,7 +259,7 @@
 			Quantum Entanglement
 		</Answer>
 	</Question>
-	<Question QuestionId="16" Difficulty="Hard" CallAFriendText="I recall studying this challenging concept in computer science, essential for algorithm efficiency">
+	<Question QuestionId="16" Difficulty="Hard" CallAFriendText="As a man doing his computer science degree, I can 100% assure you it is O(n log n)!">
 		<Description>
 			What is the time complexity of the quicksort algorithm in the worst-case scenario?
 		</Description>
@@ -276,7 +276,7 @@
 			O(n log n)
 		</Answer>
 	</Question>
-	<Question QuestionId="17" Difficulty="Hard" CallAFriendText="I remember this complex economic theory, often associated with government intervention">
+	<Question QuestionId="17" Difficulty="Hard" CallAFriendText="I remember this complex economic theory... just kiding, you are on your own.">
 		<Description>
 			What economic theory advocates for government intervention in the economy to stabilize fluctuations and maintain full employment?
 		</Description>
@@ -293,7 +293,7 @@
 			Austrian School
 		</Answer>
 	</Question>
-	<Question QuestionId="18" Difficulty="Hard" CallAFriendText="I recall this intricate geographical term, often used in the study of landforms">
+	<Question QuestionId="18" Difficulty="Hard" CallAFriendText="There are no such things on Sunny Beach, gotta pass!">
 		<Description>
 			What term is used to describe a narrow, steep-sided inlet of the sea between high cliffs, typically formed by the submergence of a glaciated valley?
 		</Description>
