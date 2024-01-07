@@ -1,0 +1,70 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+  <xs:element name="Questions" vc:minVersion="1.1">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Question" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name='Description' type='DescriptionString'/>
+              <xs:element name="Answer" maxOccurs="4" minOccurs="4">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="AnswerString">
+                      <xs:attribute type="PercentageType" name="VotePercentage" use="required"/>
+                      <xs:attribute type="xs:boolean" name="IsShownInFiftyFifty" use="required"/>
+                      <xs:attribute type="xs:boolean" name="IsCorrect" use="required"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name='CallAFriendText' type='CallAFriendString' use="required"/>
+            <xs:attribute name='Difficulty' type='DifficultyType' use="required"/>
+            <xs:attribute type="xs:integer" name="QuestionId" use="required"/>
+            <xs:assert test="sum(Answer/@VotePercentage) = 100"/>
+            <xs:assert test="count(Answer[@IsCorrect=true()]) = 1"/>          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+    <xs:key name="QuestionIsUnique">
+      <xs:selector xpath="Question"/>
+      <xs:field xpath="@QuestionId"/>
+    </xs:key>
+  </xs:element>
+
+  <xs:simpleType name="CallAFriendString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="AnswerString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+      <xs:maxLength value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DescriptionString">
+    <xs:restriction base="xs:string">
+      <xs:whiteSpace value="collapse"/>
+      <xs:maxLength value="200"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="DifficultyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Easy"/>
+      <xs:enumeration value="Medium"/>
+      <xs:enumeration value="Hard"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PercentageType">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>
