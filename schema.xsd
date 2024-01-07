@@ -70,7 +70,7 @@
   <!-- Represents the list of questions element type -->
   <xs:complexType name="ListOfQuestionsType">
     <xs:sequence>
-      <xs:element name="Question" type="QuestionType" maxOccurs="unbounded" minOccurs="0" />
+      <xs:element name="Question" type="QuestionType" maxOccurs="unbounded" minOccurs="15" />
     </xs:sequence>
   </xs:complexType>
   <!-- Represent the root element, a list of all questions -->
