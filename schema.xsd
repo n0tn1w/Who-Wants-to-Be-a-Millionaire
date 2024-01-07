@@ -64,6 +64,8 @@
     <xs:assert test="count(Answer[@IsCorrect=true()]) = 1" />
     <!-- Checks that the number of answers shown during 50/50 lifeline equals 2 -->
     <xs:assert test="count(Answer[@IsShownInFiftyFifty=true()]) = 2" />
+    <!-- Checks that the correct answer is shown during 50/50 lifeline -->
+    <xs:assert test="count(Answer[@IsShownInFiftyFifty=true() and @IsCorrect=true()]) = 1" />
   </xs:complexType>
   <!-- Represents the list of questions element type -->
   <xs:complexType name="ListOfQuestionsType">
