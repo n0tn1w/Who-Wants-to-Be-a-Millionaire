@@ -1,0 +1,313 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Questions>
+	<Question QuestionId="1" Difficulty="Easy" CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe.">
+		<Description>
+			Which city is home to the Eiffel Tower?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			Paris
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			London
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			New York
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Tokyo
+		</Answer>
+	</Question>
+	<Question QuestionId="2" Difficulty="Easy" CallAFriendText="I remember this one from chemistry class, the symbol is Au.">
+		<Description>
+			What is the chemical symbol for gold?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
+			Au
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Ag
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Fe
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Cu
+		</Answer>
+	</Question>
+	<Question QuestionId="3" Difficulty="Easy" CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy.">
+		<Description>
+			Who wrote the play "Romeo and Juliet"?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			William Shakespeare
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Charles Dickens
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Jane Austen
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Mark Twain
+		</Answer>
+	</Question>
+	<Question QuestionId="4" Difficulty="Easy" CallAFriendText="There's a law about motion, something about inertia. Could it be Newton's First Law?">
+		<Description>
+			Which law states that an object at rest will stay at rest, and an object in
+			motion will stay in motion?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="75" IsShownInFiftyFifty="true">
+			Newton's First Law
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Archimedes'
+			Principle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Boyle's Law
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="true">
+			Einstein's Theory of
+			Relativity
+		</Answer>
+	</Question>
+	<Question QuestionId="5" Difficulty="Easy" CallAFriendText="It is for sure the Statue of Liberty!">
+		<Description>
+			Which iconic statue stands on Liberty Island in New York Harbor?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="80" IsShownInFiftyFifty="true">
+			Statue of Liberty
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Eiffel Tower
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Great Wall of China
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
+			Sydney Opera House
+		</Answer>
+	</Question>
+	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="Good lord... I watched the Oppenheimer movie just yesterday. The answer is E=mc^2">
+		<Description>
+			What is the equation that relates mass and energy, formulated by Albert
+			Einstein?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			F=ma
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
+			E=mc^2
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			PV=nRT
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Hooke's Law
+		</Answer>
+	</Question>
+	<Question QuestionId="7" Difficulty="Medium" CallAFriendText="Sorry, I did not study during History classes.">
+		<Description>
+			Which treaty marked the end of World War I and was signed in 1919?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Treaty of Versailles
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Treaty of Trianon
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Treaty of Brest-Litovsk
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			Molotov-Ribbentrop Pact
+		</Answer>
+	</Question>
+	<Question QuestionId="8" Difficulty="Medium" CallAFriendText="I remember learning about this ancient civilization, known for its pyramids and Sphinx. I am not sure about the name...">
+		<Description>
+			Which ancient civilization built the pyramids of Giza?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
+			Ancient Egyptians
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Mesopotamians
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			Mayans
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Greeks
+		</Answer>
+	</Question>
+	<Question QuestionId="9" Difficulty="Medium" CallAFriendText="Charles Darwin's ship during his Galápagos voyage... I think it's HMS Beagle?">
+		<Description>
+			What is the name of Charles Darwin's ship during his voyage to the Galápagos Islands?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
+			HMS Beagle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Endeavour
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			Santa Maria
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Discovery
+		</Answer>
+	</Question>
+	<Question QuestionId="10" Difficulty="Medium" CallAFriendText="Monet is a champagne so it is not the correct answer for sure.">
+		<Description>
+			Who is the artist known for the painting "The Persistence of Memory"?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Salvador Dalí
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Pablo Picasso
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
+			Vincent van Gogh
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Claude Monet
+		</Answer>
+	</Question>
+	<Question QuestionId="11" Difficulty="Medium" CallAFriendText="Could it be Charles Darwin?">
+		<Description>
+			Who developed the theory of evolution by natural selection?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
+			Charles Darwin
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Gregor Mendel
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
+			Alfred Russel Wallace
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Louis Pasteur
+		</Answer>
+	</Question>
+	<Question QuestionId="12" Difficulty="Medium" CallAFriendText="This one is a bit challenging, but recalling the 20th century, there was something with Perestroika?">
+		<Description>
+			What was the name of the political and economic restructuring in the Soviet Union during the 1980s?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
+			Perestroika
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
+			Glasnost
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Solidarity
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
+			Velvet Revolution
+		</Answer>
+	</Question>
+	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I am in love with this question">
+		<Description>
+			What is the name of the mathematical concept that describes sensitive dependence on initial conditions and is often associated with chaos theory?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="40" IsShownInFiftyFifty="true">
+			Fractal Geometry
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Butterfly Effect
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Golden Ratio
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
+			Game Theory
+		</Answer>
+	</Question>
+	<Question QuestionId="14" Difficulty="Hard" CallAFriendText="Good job so far! There's a concept questioning reality and knowledge. Maybe Ontology?">
+		<Description>
+			What is the philosophical concept that questions the nature of reality, existence, and knowledge, and is often discussed in metaphysics?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Solipsism
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="35" IsShownInFiftyFifty="true">
+			Ontology
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Utilitarianism
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Nihilism
+		</Answer>
+	</Question>
+	<Question QuestionId="15" Difficulty="Hard" CallAFriendText="No idea!">
+		<Description>
+			In quantum mechanics, what principle states that measuring one property of a particle precisely makes the simultaneous measurement of another property less precise?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Pauli Exclusion Principle
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Heisenberg Uncertainty Principle
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Schrödinger's Cat
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Quantum Entanglement
+		</Answer>
+	</Question>
+	<Question QuestionId="16" Difficulty="Hard" CallAFriendText="As a man doing his computer science degree, I can 100% assure you it is O(n log n)!">
+		<Description>
+			What is the time complexity of the quicksort algorithm in the worst-case scenario?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="true">
+			O(n)
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="35" IsShownInFiftyFifty="true">
+			O(n^2)
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			O(log n)
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			O(n log n)
+		</Answer>
+	</Question>
+	<Question QuestionId="17" Difficulty="Hard" CallAFriendText="I remember this complex economic theory... just kiding, you are on your own.">
+		<Description>
+			What economic theory advocates for government intervention in the economy to stabilize fluctuations and maintain full employment?
+		</Description>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Monetarism
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Laissez-Faire
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Keynesian Economics
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Austrian School
+		</Answer>
+	</Question>
+	<Question QuestionId="18" Difficulty="Hard" CallAFriendText="There are no such things on Sunny Beach, gotta pass!">
+		<Description>
+			What term is used to describe a narrow, steep-sided inlet of the sea between high cliffs, typically formed by the submergence of a glaciated valley?
+		</Description>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Fjord
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
+			Estuary
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
+			Atoll
+		</Answer>
+		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
+			Polder
+		</Answer>
+	</Question>
+</Questions>
