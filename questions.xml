@@ -1,0 +1,43 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<Questions>
+   <Question QuestionId='1' Difficulty="Easy"
+      CallAFriendText="I remember seeing the iconic Eiffel Tower during my trip to Europe">
+      <Description>Which city is home to the Eiffel Tower?</Description>
+      <Answer IsCorrect='true' VotePercentage="70" IsShownInFiftyFifty="true">Paris</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">London</Answer>
+      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">New York</Answer>
+      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Tokyo</Answer>
+   </Question>
+   <Question QuestionId='2' Difficulty="Easy"
+      CallAFriendText="I remember this one from chemistry class, the symbol is Au">
+      <Description>What is the chemical symbol for gold?</Description>
+      <Answer IsCorrect='true' VotePercentage="60" IsShownInFiftyFifty="true">Au</Answer>
+      <Answer IsCorrect='false' VotePercentage="20" IsShownInFiftyFifty="false">Ag</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Fe</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">Cu</Answer>
+   </Question>
+   <Question QuestionId='3' Difficulty="Easy"
+      CallAFriendText="I remember studying this play in high school, it's a famous Shakespeare tragedy">
+      <Description>Who wrote the play "Romeo and Juliet"?</Description>
+      <Answer IsCorrect='true' VotePercentage="70" IsShownInFiftyFifty="true">William Shakespeare</Answer>
+      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="true">Charles Dickens</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Jane Austen</Answer>
+      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Mark Twain</Answer>
+   </Question>
+   <Question QuestionId='4' Difficulty="Easy"
+      CallAFriendText="I remember this famous scientist's law about motion, it's Newton's first law">
+      <Description>Which law states that an object at rest will stay at rest, and an object in motion will stay in motion?</Description>
+      <Answer IsCorrect='true' VotePercentage="75" IsShownInFiftyFifty="true">Newton's First Law</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Archimedes' Principle</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="false">Boyle's Law</Answer>
+      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="true">Einstein's Theory of Relativity</Answer>
+   </Question>
+   <Question QuestionId='5' Difficulty="Easy"
+      CallAFriendText="I remember this famous landmark in the United States, it's located in New York">
+      <Description>Which iconic statue stands on Liberty Island in New York Harbor?</Description>
+      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="true">Statue of Liberty</Answer>
+      <Answer IsCorrect='false' VotePercentage="10" IsShownInFiftyFifty="true">Eiffel Tower</Answer>
+      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Great Wall of China</Answer>
+      <Answer IsCorrect='false' VotePercentage="5" IsShownInFiftyFifty="false">Sydney Opera House</Answer>
+   </Question>
+</Questions>
