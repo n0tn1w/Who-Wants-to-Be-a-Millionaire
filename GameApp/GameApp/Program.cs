@@ -1,3 +1,5 @@
+using GameApp.Services;
+
 namespace GameApp
 {
     internal static class Program
@@ -11,7 +13,13 @@ namespace GameApp
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new MainForm());
+
+            var gameHelperService = new GameHelperService();
+
+            // Instantiate your MainForm with the required service
+            var mainForm = new MainForm(gameHelperService);
+
+            Application.Run(mainForm);
         }
     }
 }

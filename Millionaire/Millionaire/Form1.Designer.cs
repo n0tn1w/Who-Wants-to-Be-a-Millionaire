@@ -162,6 +162,7 @@
             // 
             // listBoxRounds
             // 
+            listBoxRounds = new ListBox();
             listBoxRounds.Font = new Font("Franklin Gothic Medium Cond", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listBoxRounds.FormattingEnabled = true;
             listBoxRounds.ItemHeight = 25;
@@ -169,7 +170,12 @@
             listBoxRounds.Location = new Point(976, 99);
             listBoxRounds.Name = "listBoxRounds";
             listBoxRounds.Size = new Size(326, 404);
+
             listBoxRounds.TabIndex = 15;
+            buttonCashOut.Click += (sender, e) =>
+            {
+                    listBoxRounds.SelectedIndex = 1;
+            };
             // 
             // MainForm
             // 
