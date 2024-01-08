@@ -97,6 +97,7 @@ namespace GameApp
                 labelCtext.Visible = true;
                 buttonAnswer4.Visible = true;
                 labelDtext.Visible = true;
+                isFiftyFiftyTriggered = false;
             }
             panelCallAFriend.Visible = false;
             textBoxCallAFriend.Visible = false;
