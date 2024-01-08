@@ -9,21 +9,21 @@ namespace GameApp
     {
         public static readonly string[] Rounds =
         {
-            "15  100,000 лева",
-            "14  50,000 лева",
-            "13  25,000 лева",
-            "12  10,000 лева",
-            "11  5,000 лева",
-            "10  2,500 лева",
-            "9  2,000 лева",
-            "8  1,500 лева",
-            "7  1,000 лева",
-            "6  500 лева",
-            "5  250 лева",
-            "4  200 лева",
-            "3  150 лева",
-            "2  100 лева",
-            "1  50 лева"
+            "15  100,000 $",
+            "14  50,000 $",
+            "13  25,000 $",
+            "12  10,000 $",
+            "11  5,000 $",
+            "10  2,500 $",
+            "9  2,000 $",
+            "8  1,500 $",
+            "7  1,000 $",
+            "6  500 $",
+            "5  250 $",
+            "4  200 $",
+            "3  150 $",
+            "2  100 $",
+            "1  50 $",
         };
 
         private readonly IGameHelperService gameHelperService;
@@ -83,9 +83,10 @@ namespace GameApp
 
         private void getCurrentQuestion()
         {
-            if (this.currentQuestionIndex == 13)
+            if (this.currentQuestionIndex == 16)
             {
                 GameIsWonScreen();
+                return;
             }
             if (isFiftyFiftyTriggered)
             {
@@ -272,38 +273,48 @@ namespace GameApp
 
         private void buttonCashOut_Click(object sender, EventArgs e)
         {
-            GameOverScree(Rounds[15 - this.currentQuestionIndex].Split(" ")[2]);
+            if(this.currentQuestionIndex == 1)
+            {
+                GameOverScree("0");
+                return;
+            }
+            GameOverScree(Rounds[15 - this.currentQuestionIndex + 1].Split(" ")[2]);
         }
 
         private void GameOverScree(string currentSum)
         {
             if (currentSum == " ")
             {
-                textBoxFinal.Text = "You have won " + Rounds[15 - this.currentQuestionIndex].Split(" ")[2] + " лева.";
+                textBoxFinal.Text = "You have won " + Rounds[15 - this.currentQuestionIndex].Split(" ")[2] + " $.";
 
-                if (1 <= currentQuestionIndex && currentQuestionIndex <= 5)
+                if (0 <= currentQuestionIndex && currentQuestionIndex <= 5)
                 {
                     currentSum = "0";
+                    textBoxFinal.Text = "You lost the game.";
                 }
                 else if (6 <= currentQuestionIndex && currentQuestionIndex <= 9)
                 {
                     currentSum = "250";
+                    textBoxFinal.Text = "The game ended. Your earnings: " + currentSum + " $.";
 
                 }
-                else if (10 <= currentQuestionIndex && currentQuestionIndex <= 12)
+                else if (10 <= currentQuestionIndex && currentQuestionIndex <= 15)
                 {
-                    currentSum = "2 500";
-
+                    currentSum = "2,500";
+                    textBoxFinal.Text = "The game ended. Your earnings: " + currentSum + " $.";
                 }
-                else 
-                {
-                    textBoxFinal.Text = "Congratulations you have won and the game\n" + textBoxFinal.Text;
-                }
-
             }
-            textBoxFinal.Text = "You have won the game and the big price of " + currentSum + " лева.";
-
-
+            else
+            {
+                if (currentSum == "100 000")
+                {
+                    textBoxFinal.Text = "Congratulations! You have won the big prize of " + currentSum + " $!";
+                }
+                else
+                {
+                    textBoxFinal.Text = "The game ended. Your earnings: " + currentSum + " $.";
+                }
+            }
             pannelFinal.Visible = true;
             textBoxFinal.Visible = true;
             buttonFinal.Visible = true;

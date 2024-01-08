@@ -4,11 +4,11 @@
 		<Description>
 			Which city is home to the Eiffel Tower?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
-			Paris
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
 			London
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			Paris
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
 			New York
@@ -21,14 +21,14 @@
 		<Description>
 			What is the chemical symbol for gold?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
-			Au
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			Ag
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
 			Fe
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="60" IsShownInFiftyFifty="true">
+			Au
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
 			Cu
@@ -38,9 +38,6 @@
 		<Description>
 			Who wrote the play "Romeo and Juliet"?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
-			William Shakespeare
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
 			Charles Dickens
 		</Answer>
@@ -50,25 +47,8 @@
 		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="false">
 			Mark Twain
 		</Answer>
-	</Question>
-	<Question QuestionId="4" Difficulty="Easy" CallAFriendText="There's a law about motion, something about inertia. Could it be Newton's First Law?">
-		<Description>
-			Which law states that an object at rest will stay at rest, and an object in
-			motion will stay in motion?
-		</Description>
-		<Answer IsCorrect="true" VotePercentage="75" IsShownInFiftyFifty="true">
-			Newton's First Law
-		</Answer>
-		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
-			Archimedes'
-			Principle
-		</Answer>
-		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
-			Boyle's Law
-		</Answer>
-		<Answer IsCorrect="false" VotePercentage="5" IsShownInFiftyFifty="true">
-			Einstein's Theory of
-			Relativity
+		<Answer IsCorrect="true" VotePercentage="70" IsShownInFiftyFifty="true">
+			William Shakespeare
 		</Answer>
 	</Question>
 	<Question QuestionId="5" Difficulty="Easy" CallAFriendText="It is for sure the Statue of Liberty!">
@@ -88,10 +68,9 @@
 			Sydney Opera House
 		</Answer>
 	</Question>
-	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="Good lord... I watched the Oppenheimer movie just yesterday. The answer is E=mc^2">
+	<Question QuestionId="6" Difficulty="Easy" CallAFriendText="Good lord... I watched the Oppenheimer movie just yesterday. The answer is E=mc^2.">
 		<Description>
-			What is the equation that relates mass and energy, formulated by Albert
-			Einstein?
+			What is the equation that relates mass and energy, formulated by Albert Einstein?
 		</Description>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			F=ma
@@ -110,11 +89,11 @@
 		<Description>
 			Which treaty marked the end of World War I and was signed in 1919?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
-			Treaty of Versailles
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			Treaty of Trianon
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Treaty of Versailles
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
 			Treaty of Brest-Litovsk
@@ -127,9 +106,6 @@
 		<Description>
 			Which ancient civilization built the pyramids of Giza?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
-			Ancient Egyptians
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
 			Mesopotamians
 		</Answer>
@@ -138,6 +114,9 @@
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="false">
 			Greeks
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="45" IsShownInFiftyFifty="true">
+			Ancient Egyptians
 		</Answer>
 	</Question>
 	<Question QuestionId="9" Difficulty="Medium" CallAFriendText="Charles Darwin's ship during his Galápagos voyage... I think it's HMS Beagle?">
@@ -161,14 +140,14 @@
 		<Description>
 			Who is the artist known for the painting "The Persistence of Memory"?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
-			Salvador Dalí
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			Pablo Picasso
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="false">
 			Vincent van Gogh
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="50" IsShownInFiftyFifty="true">
+			Salvador Dalí
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="15" IsShownInFiftyFifty="true">
 			Claude Monet
@@ -195,20 +174,20 @@
 		<Description>
 			What was the name of the political and economic restructuring in the Soviet Union during the 1980s?
 		</Description>
-		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
-			Perestroika
-		</Answer>
 		<Answer IsCorrect="false" VotePercentage="30" IsShownInFiftyFifty="false">
 			Glasnost
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			Solidarity
 		</Answer>
+		<Answer IsCorrect="true" VotePercentage="40" IsShownInFiftyFifty="true">
+			Perestroika
+		</Answer>
 		<Answer IsCorrect="false" VotePercentage="10" IsShownInFiftyFifty="true">
 			Velvet Revolution
 		</Answer>
 	</Question>
-	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I am in love with this question">
+	<Question QuestionId="13" Difficulty="Hard" CallAFriendText="I am in love with this question!">
 		<Description>
 			What is the name of the mathematical concept that describes sensitive dependence on initial conditions and is often associated with chaos theory?
 		</Description>
@@ -244,19 +223,19 @@
 	</Question>
 	<Question QuestionId="15" Difficulty="Hard" CallAFriendText="No idea!">
 		<Description>
-			In quantum mechanics, what principle states that measuring one property of a particle precisely makes the simultaneous measurement of another property less precise?
+			What principle states that measuring one property of a particle precisely makes the simultaneous measurement of another property less precise?
 		</Description>
 		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="true">
-			Pauli Exclusion Principle
-		</Answer>
-		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
-			Heisenberg Uncertainty Principle
+			Pauli Exclusion
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="20" IsShownInFiftyFifty="false">
 			Schrödinger's Cat
 		</Answer>
 		<Answer IsCorrect="false" VotePercentage="25" IsShownInFiftyFifty="false">
 			Quantum Entanglement
+		</Answer>
+		<Answer IsCorrect="true" VotePercentage="30" IsShownInFiftyFifty="true">
+			Heisenberg Uncertainty
 		</Answer>
 	</Question>
 	<Question QuestionId="16" Difficulty="Hard" CallAFriendText="As a man doing his computer science degree, I can 100% assure you it is O(n log n)!">

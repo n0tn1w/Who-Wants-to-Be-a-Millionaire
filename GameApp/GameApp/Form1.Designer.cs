@@ -322,7 +322,6 @@ namespace GameApp
             // 
             // richTextBox1
             // 
-            richTextBox1.BackColor = Color.LightGray;
             richTextBox1.BorderStyle = BorderStyle.None;
             richTextBox1.Font = new Font("Arial", 19F, FontStyle.Regular, GraphicsUnit.Point);
             richTextBox1.Location = new Point(130, 8);
@@ -330,7 +329,7 @@ namespace GameApp
             richTextBox1.Name = "richTextBox1";
             richTextBox1.ReadOnly = true;
             richTextBox1.ScrollBars = RichTextBoxScrollBars.None;
-            richTextBox1.Size = new Size(601, 96);
+            richTextBox1.Size = new Size(601, 146);
             richTextBox1.TabIndex = 9;
             richTextBox1.Text = "";
             // 
@@ -372,7 +371,7 @@ namespace GameApp
             buttonLifelineAudience.Cursor = Cursors.Hand;
             buttonLifelineAudience.FlatAppearance.BorderSize = 0;
             buttonLifelineAudience.FlatStyle = FlatStyle.Flat;
-            buttonLifelineAudience.Font = new Font("Arial", 11F, FontStyle.Bold, GraphicsUnit.Point);
+            buttonLifelineAudience.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
             buttonLifelineAudience.ForeColor = Color.White;
             buttonLifelineAudience.Location = new Point(1056, 8);
             buttonLifelineAudience.Name = "buttonLifelineAudience";
@@ -389,7 +388,7 @@ namespace GameApp
             buttonCashOut.FlatStyle = FlatStyle.Flat;
             buttonCashOut.Font = new Font("Arial", 14F, FontStyle.Bold, GraphicsUnit.Point);
             buttonCashOut.ForeColor = Color.White;
-            buttonCashOut.Location = new Point(854, 414);
+            buttonCashOut.Location = new Point(854, 484);
             buttonCashOut.Margin = new Padding(3, 2, 3, 2);
             buttonCashOut.Name = "buttonCashOut";
             buttonCashOut.Size = new Size(285, 44);
@@ -406,7 +405,7 @@ namespace GameApp
             listBoxRounds.Location = new Point(854, 74);
             listBoxRounds.Margin = new Padding(3, 2, 3, 2);
             listBoxRounds.Name = "listBoxRounds";
-            listBoxRounds.Size = new Size(286, 319);
+            listBoxRounds.Size = new Size(286, 389);
             listBoxRounds.TabIndex = 15;
             // 
             // startPanel
@@ -481,9 +480,9 @@ namespace GameApp
             panelCallAFriend.BackColor = SystemColors.MenuHighlight;
             panelCallAFriend.Controls.Add(textBoxCallAFriend);
             panelCallAFriend.ForeColor = SystemColors.ControlText;
-            panelCallAFriend.Location = new Point(44, 112);
+            panelCallAFriend.Location = new Point(44, 172);
             panelCallAFriend.Name = "panelCallAFriend";
-            panelCallAFriend.Size = new Size(266, 118);
+            panelCallAFriend.Size = new Size(266, 148);
             panelCallAFriend.TabIndex = 18;
             panelCallAFriend.Visible = false;
             // 
@@ -492,7 +491,7 @@ namespace GameApp
             textBoxCallAFriend.Font = new Font("Arial", 11F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxCallAFriend.Location = new Point(16, 19);
             textBoxCallAFriend.Name = "textBoxCallAFriend";
-            textBoxCallAFriend.Size = new Size(228, 80);
+            textBoxCallAFriend.Size = new Size(228, 110);
             textBoxCallAFriend.TabIndex = 19;
             textBoxCallAFriend.Text = "";
             textBoxCallAFriend.Visible = false;
@@ -520,9 +519,9 @@ namespace GameApp
             panelAudiance.BackColor = SystemColors.MenuHighlight;
             panelAudiance.Controls.Add(textBoxAudiance);
             panelAudiance.ForeColor = SystemColors.ControlText;
-            panelAudiance.Location = new Point(544, 112);
+            panelAudiance.Location = new Point(544, 172);
             panelAudiance.Name = "panelAudiance";
-            panelAudiance.Size = new Size(266, 118);
+            panelAudiance.Size = new Size(266, 148);
             panelAudiance.TabIndex = 20;
             panelAudiance.Visible = false;
             // 
@@ -531,7 +530,7 @@ namespace GameApp
             textBoxAudiance.Font = new Font("Arial", 11F, FontStyle.Bold, GraphicsUnit.Point);
             textBoxAudiance.Location = new Point(16, 19);
             textBoxAudiance.Name = "textBoxAudiance";
-            textBoxAudiance.Size = new Size(233, 80);
+            textBoxAudiance.Size = new Size(233, 110);
             textBoxAudiance.TabIndex = 19;
             textBoxAudiance.Text = "";
             textBoxAudiance.Visible = false;
@@ -542,12 +541,12 @@ namespace GameApp
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1166, 607);
-            Controls.Add(panelAudiance);
             Controls.Add(startPanel);
             Controls.Add(pannelFinal);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(panelCallAFriend);
+            Controls.Add(panelAudiance);
             Controls.Add(buttonCashOut);
             Controls.Add(buttonLifelineAudience);
             Controls.Add(buttonLifeline5050);

@@ -10,7 +10,7 @@ namespace GameApp.Services
 {
     public class GameHelperService : IGameHelperService
     {
-        private const string path = "D:\\C Sharp\\WWBM\\questions.xml";
+        private const string path = "C:\\Users\\Teodor.Kostadinov\\UNI\\MillionaireProject\\Who-Wants-to-Be-a-Millionaire\\questions.xml";
         public GameHelperService()
         {
             // Load data from XML File
@@ -29,18 +29,18 @@ namespace GameApp.Services
 
         public Question GetNextQuestion(int currentQuestionIndex)
         {
-            Question question = null;
+            Question question = null; 
 
-            if (1 <= currentQuestionIndex && currentQuestionIndex <= 4)
+            if (1 <= currentQuestionIndex && currentQuestionIndex <= 5)
             {
                 question = GetQuestionFromList(easyQuestions);
             }
-            else if (5 <= currentQuestionIndex && currentQuestionIndex <= 8)
+            else if (6 <= currentQuestionIndex && currentQuestionIndex <= 9)
             {
                 question = GetQuestionFromList(mediumQuestions);
 
             }
-            else if (9 <= currentQuestionIndex && currentQuestionIndex <= 12) 
+            else if (10 <= currentQuestionIndex && currentQuestionIndex <= 15) 
             {
                 question = GetQuestionFromList(hardQuestions);
 
@@ -60,7 +60,7 @@ namespace GameApp.Services
             bool foundQuestion = false;
             int iter = 0;
 
-            while (!foundQuestion && iter < 100)
+            while (!foundQuestion && iter < 10000)
             {
                 Random random = new Random();
                 int randomIndex = random.Next(0, list.Count);
