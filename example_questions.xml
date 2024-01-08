@@ -3,10 +3,10 @@
    <Question QuestionId='22' Difficulty="Easy"
       CallAFriendText="I    think    the correct answer is something to do with birds">
       <Description>What animal can fly in the sky?</Description>
-      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="false">Option A</Answer>
-      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="true">Option B</Answer>
-      <Answer IsCorrect='false' VotePercentage="20" IsShownInFiftyFifty="false">Option C</Answer>
-      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="true">Option D</Answer>
+      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="false">Dog</Answer>
+      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="true">Pigeon</Answer>
+      <Answer IsCorrect='false' VotePercentage="20" IsShownInFiftyFifty="false">Penguin</Answer>
+      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="true">Cat</Answer>
    </Question>
    <Question QuestionId='21' Difficulty="Hard"
       CallAFriendText="I recall seing a dog in the park but can not be sure.">
