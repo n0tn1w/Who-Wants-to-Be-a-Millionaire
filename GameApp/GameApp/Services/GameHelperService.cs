@@ -10,7 +10,7 @@ namespace GameApp.Services
 {
     public class GameHelperService : IGameHelperService
     {
-        private const string path = "C:\\Users\\daniel.manchevski\\source\\TestC#\\Who-Wants-to-Be-a-Millionaire\\questions.xml";
+        private const string path = "D:\\C Sharp\\WWBM\\questions.xml";
         public GameHelperService()
         {
             // Load data from XML File
