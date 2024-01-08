@@ -3,17 +3,17 @@
    <Question QuestionId='22' Difficulty="Easy"
       CallAFriendText="I    think    the correct answer is something to do with birds">
       <Description>What animal can fly in the sky?</Description>
-      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="true">Option A</Answer>
-      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="false">Option B</Answer>
+      <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="false">Option A</Answer>
+      <Answer IsCorrect='true' VotePercentage="80" IsShownInFiftyFifty="true">Option B</Answer>
       <Answer IsCorrect='false' VotePercentage="20" IsShownInFiftyFifty="false">Option C</Answer>
       <Answer IsCorrect='false' VotePercentage="0" IsShownInFiftyFifty="true">Option D</Answer>
    </Question>
    <Question QuestionId='21' Difficulty="Hard"
-      CallAFriendText="I think the correct answer is something to do with animals">
+      CallAFriendText="I recall seing a dog in the park but can not be sure.">
       <Description>What is a Dog?</Description>
-      <Answer IsCorrect='false' VotePercentage="30" IsShownInFiftyFifty="true">Option AA</Answer>
-      <Answer IsCorrect='false' VotePercentage="40" IsShownInFiftyFifty="false">Option BB</Answer>
-      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">Option CC</Answer>
-      <Answer IsCorrect='true' VotePercentage="15" IsShownInFiftyFifty='true'>Option DD</Answer>
+      <Answer IsCorrect='false' VotePercentage="30" IsShownInFiftyFifty="true">Candy</Answer>
+      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">Rock</Answer>
+      <Answer IsCorrect='false' VotePercentage="15" IsShownInFiftyFifty="false">Furniture</Answer>
+      <Answer IsCorrect='true' VotePercentage="40" IsShownInFiftyFifty='true'>Animal</Answer>
    </Question>
 </Questions>
