@@ -1,96 +1,117 @@
 ﻿using GameApp.Models;
-using System.Xml.Linq;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace GameApp.Services
 {
     public class GameHelperService : IGameHelperService
     {
-        public const string filePath = "D:\\C Sharp\\Who-Wants-to-Be-a-Millionaire\\GameApp\\GameApp\\wwwroot\\qna.xml";
-
-        private int currentQuestion = 0;
-        private List<QuestionDTO> questionList = new List<QuestionDTO>();
-        private List<int> alreadyDoneQuestion = new List<int>();
-
-        public LifelineContainerDTO lifelineContainer { get; set; }
-
-        public GameHelperService() 
+        private const string path = "C:\\Users\\Teodor.Kostadinov\\UNI\\MillionaireProject\\Who-Wants-to-Be-a-Millionaire\\questions.xml";
+        public GameHelperService()
         {
-            ExtractDataFromXMLFile();
-            this.lifelineContainer = new LifelineContainerDTO();
+            // Load data from XML File
+            this.easyQuestions = new List<Question>();
+            this.mediumQuestions = new List<Question>();
+            this.hardQuestions = new List<Question>();
+
+            LoadDataFromXMLFile();
         }
 
-        private void ExtractDataFromXMLFile() 
+        private List<Question> easyQuestions;
+        private List<Question> mediumQuestions;
+        private List<Question> hardQuestions;
+
+        private List<int> usedIndexes = new List<int>();
+
+        public Question GetNextQuestion(int currentQuestionIndex)
         {
-            XDocument doc = XDocument.Load(filePath);
+            Question question = null; 
 
-            this.questionList = doc.Root.Elements("question")
-                .Select(q => new QuestionDTO
-                {
-                    Id = int.Parse(q.Attribute("id").Value),
-                    Difficulty = q.Attribute("difficulty").Value,
-                    Description = q.Element("text").Value,
-                    Options = q.Element("options").Elements("option")
-                        .Select(o => new AnswersOptionsDTO
-                        {
-                            Correct = bool.Parse(o.Attribute("correct").Value),
-                            Description = o.Value
-                        })
-                        .ToList()
-                })
-                .ToList();
-        }
-
-        public void EmptyUsedQuestionsList()
-        {
-            alreadyDoneQuestion = new List<int>();
-        }
-
-        public int GetCurrentQuestionNumber()
-        {
-            return currentQuestion;
-        }
-        public void SetCurrentQuestionNumber(int questionId)
-        {
-            this.currentQuestion = questionId;
-        }
-
-        public QuestionDTO GetNextQuestion(int index)
-        {
-            int numOfQuestions = this.questionList.Count();
-
-            // From 1-4 easy questions, from 5-8 mediam, from 9-12 hard (inclusive boundaries)
-            Random random = new Random();
-            int chosenQuestion = 0;
-            bool questionIsPicked = false;
-
-            while (!questionIsPicked)
+            if (1 <= currentQuestionIndex && currentQuestionIndex <= 5)
             {
-                if (index <= 4)
-                {
-                    chosenQuestion = random.Next(0, 9);
-                }
-                else if (index <= 8)
-                {
-                    chosenQuestion = random.Next(10, 19);
-                }
-                else
-                {
-                    chosenQuestion = random.Next(20, 29);
-                }
+                question = GetQuestionFromList(easyQuestions);
+            }
+            else if (6 <= currentQuestionIndex && currentQuestionIndex <= 9)
+            {
+                question = GetQuestionFromList(mediumQuestions);
 
-                if (this.alreadyDoneQuestion.Contains(chosenQuestion))
-                {
-                    // This question have already been done
-                }
-                else 
-                {
-                    questionIsPicked = true;
-                    this.alreadyDoneQuestion.Add(chosenQuestion);
-                }
+            }
+            else if (10 <= currentQuestionIndex && currentQuestionIndex <= 15) 
+            {
+                question = GetQuestionFromList(hardQuestions);
+
             }
 
-            return this.questionList[chosenQuestion];
+            return question;
         }
 
+        private Question GetQuestionFromList(List<Question> list)
+        {
+            if (list == null || list.Count == 0)
+            {
+                // Handle the case where the list is empty or null
+                return null;
+            }
+
+            bool foundQuestion = false;
+            int iter = 0;
+
+            while (!foundQuestion && iter < 10000)
+            {
+                Random random = new Random();
+                int randomIndex = random.Next(0, list.Count);
+                Question question = list[randomIndex];
+
+                if (!this.usedIndexes.Contains(question.QuestionId)) 
+                {
+                    foundQuestion = true;
+                    this.usedIndexes.Add(question.QuestionId);
+                    return question;
+                }
+
+                iter++;
+
+            }
+
+            return null;
+        }
+
+        public void ResetGame() 
+        {
+            this.usedIndexes = new List<int>();
+        }
+
+        private void LoadDataFromXMLFile()
+        {
+            XmlSerializer serializer = new XmlSerializer(typeof(Questions));
+
+            using (FileStream fileStream = new FileStream(path, FileMode.Open))
+            {
+                Questions questions = (Questions)serializer.Deserialize(fileStream);
+
+                if (questions != null && questions.QuestionList != null)
+                {
+                    foreach (var question in questions.QuestionList)
+                    {
+                        switch (question.Difficulty)
+                        {
+                            case Difficulty.Easy:
+                                easyQuestions.Add(question);
+                                break;
+                            case Difficulty.Medium:
+                                mediumQuestions.Add(question);
+                                break;
+                            case Difficulty.Hard:
+                                hardQuestions.Add(question);
+                                break;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

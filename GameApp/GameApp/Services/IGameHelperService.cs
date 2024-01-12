@@ -1,14 +1,15 @@
 ﻿using GameApp.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace GameApp.Services
 {
     public interface IGameHelperService
     {
-        int GetCurrentQuestionNumber();
-        void SetCurrentQuestionNumber(int questionId);
-        QuestionDTO GetNextQuestion(int index);
-        void EmptyUsedQuestionsList();
-
-        LifelineContainerDTO lifelineContainer { get; set; }
+        Question GetNextQuestion(int currentQuestionIndex);
+        void ResetGame();
     }
 }
